@@ -1,8 +1,5 @@
 
-module.exports = 
-
-[
-    {  
+module.exports = [    {  
        
         "firstName":"Eep",
         "lastName":"Crood"
@@ -13,7 +10,7 @@ module.exports =
     }
 ];
 
-// const addKey = require('./index');
+//const addKey = require('./index');
 
 // //console.log(addKey);
 // console.log(module.exports);

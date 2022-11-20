@@ -18,15 +18,24 @@ const studentParsed = (JSON.parse(studentStringify));
 
 console.log(studentParsed);
 
-const newKey = {"age": ""};
-
-function insertAge(student){
-        return student.newKey.push;
-
-}
-
-console.log(insertAge);
-
-// const newKey = student.push({"age":""}[[0, 1], [2]]);
+// const newKey = student.push({"age":""});
 
 // console.log(newKey);
+
+console.log(studentParsed);
+
+//trouble shooting whether the student array is functioninf correctly
+
+console.log(studentParsed[0]);
+// result in terminal is correct
+
+//FIX REQUIRED THIS IS PUSH NOT WORKING
+
+let ageKey = student[0[2]];
+let addKey = {
+    "age":""
+}
+const newArray = ageKey.push(addKey);
+console.log(newArray);
+
+module.export = newArray;

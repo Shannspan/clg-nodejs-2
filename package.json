@@ -12,5 +12,13 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "module": "commonjs"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shannspan/clg-nodejs-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shannspan/clg-nodejs-2/issues"
+  },
+  "homepage": "https://github.com/Shannspan/clg-nodejs-2#readme"
 }
