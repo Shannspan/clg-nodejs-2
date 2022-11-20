@@ -1,6 +1,7 @@
 //Create variable and require array, make array dsiplay in terminal
 
 
+const { find } = require('./studentarray_export');
 const exportArray = require('./studentarray_export');
 
 //make sure it's working - had to change default settings in vs code achieve this (typescript.suggestionActions.enabled: false). Otherwise vs code is insisting on ES6. This course is using common.js. 
@@ -28,7 +29,18 @@ console.log(studentParsed);
 
 console.log(studentParsed[0]);
 // result in terminal is correct
-//FIX REQUIRED THIS IS PUSH NOT WORKING - conversation with fellow student: remember you are adding a property to an object in an array not a new object to the array! Solution found: 
+//FIX REQUIRED AS PUSH NOT WORKING - conversation with fellow student: 
+//remember you are adding a property to an object in an array,
+//not a new object to the array! Solution found: 
 
 student[0].age = 23;
 console.log(student);
+
+//Attempt to isolate key values in one object. 
+//Next, structure to iterate through both objects
+
+let singleAge = Object.keys(student[0]);
+
+console.log(singleAge);
+
+
