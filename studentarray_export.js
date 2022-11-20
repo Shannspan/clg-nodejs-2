@@ -10,7 +10,3 @@ module.exports = [    {
     }
 ];
 
-const importKey = require('./index');
-
-// //console.log(addKey);
-// console.log(module.exports);

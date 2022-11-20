@@ -24,22 +24,11 @@ console.log(studentParsed);
 
 console.log(studentParsed);
 
-//trouble shooting whether the student array is functioninf correctly
+//trouble shooting whether the student array is functioning correctly
 
 console.log(studentParsed[0]);
 // result in terminal is correct
+//FIX REQUIRED THIS IS PUSH NOT WORKING - conversation with fellow student: remember you are adding a property to an object in an array not a new object to the array! Solution found: 
 
-//FIX REQUIRED THIS IS PUSH NOT WORKING
-
-//let ageKey = (studentParsed[0]);
-
-//FIX ATTEMPT SEEMS TO BE REQUIRED WITH "PUSH". CHANGING FROM OBJECT TO ARRAY HAS NOT FIXED ISSUE
-
-//student.push
-
-//ABOVE DOES NOT CREATE ERRORS - BUT IT ALSO DOES NOT WORK
-
-
-//neither does this...
-
-module.export = (studentStringify[0][{"age": 23}]);
+student[0].age = 23;
+console.log(student);
