@@ -1,6 +1,6 @@
 //Create variable and require array, make array dsiplay in terminal
 
-const add = require('../Lessons njs/Lesson2njs/Lesson2njs-modules/add');
+
 const exportArray = require('./studentarray_export');
 
 //make sure it's working - had to change default settings in vs code achieve this (typescript.suggestionActions.enabled: false). Otherwise vs code is insisting on ES6. This course is using common.js. 
@@ -31,11 +31,15 @@ console.log(studentParsed[0]);
 
 //FIX REQUIRED THIS IS PUSH NOT WORKING
 
-let ageKey = student[0[2]];
-let addKey = {
-    "age":""
-}
-const newArray = ageKey.push(addKey);
-console.log(newArray);
+//let ageKey = (studentParsed[0]);
 
-module.export = newArray;
+//FIX ATTEMPT SEEMS TO BE REQUIRED WITH "PUSH". CHANGING FROM OBJECT TO ARRAY HAS NOT FIXED ISSUE
+
+//student.push
+
+//ABOVE DOES NOT CREATE ERRORS - BUT IT ALSO DOES NOT WORK
+
+
+//neither does this...
+
+module.export = (studentStringify[0][{"age": 23}]);
