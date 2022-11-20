@@ -1,3 +1,32 @@
+//Create variable and require array, make array dsiplay in terminal
+
+const add = require('../Lessons njs/Lesson2njs/Lesson2njs-modules/add');
 const exportArray = require('./studentarray_export');
 
-console.log(exportArray);
+//make sure it's working - had to change default settings in vs code achieve this (typescript.suggestionActions.enabled: false). Otherwise vs code is insisting on ES6. This course is using common.js. 
+// console.log(exportArray);
+
+//before parsing the array I need to bring it in - for this I am using stringify(), even though the array is already a JSON string. If I try to parse the 'student' directly I get errors saying that the object cannot be read. 
+
+const student = (exportArray);
+
+const studentStringify = (JSON.stringify(student));
+
+console.log(studentStringify);
+
+const studentParsed = (JSON.parse(studentStringify));
+
+console.log(studentParsed);
+
+const newKey = {"age": ""};
+
+function insertAge(student){
+        return student.newKey.push;
+
+}
+
+console.log(insertAge);
+
+// const newKey = student.push({"age":""}[[0, 1], [2]]);
+
+// console.log(newKey);
