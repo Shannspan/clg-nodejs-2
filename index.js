@@ -39,8 +39,37 @@ console.log(student);
 //Attempt to isolate key values in one object. 
 //Next, structure to iterate through both objects
 
-let singleAge = Object.keys(student[0]);
+let student1 = Object.keys(student[0]);
+let student2 = Object.keys(student[1]);
 
-console.log(singleAge);
+console.log(student1);
+console.log(student2);
+
+//let age = 'age';
+
+student1.forEach((age) => console.log(age));
+
+//Attempt below to achieve same result with one variable - 
+//only results in index numbers.
+// let studentAll = Object.keys(student);
+// console.log(studentAll);
+
+//The below does not achieve desired result either - 
+//still shows index numbers only
+// let StudentAll2 = Object.keys(studentAll);
+// console.log(StudentAll2);
+
+// student.forEach(studentAge)
+
+// function studentAge(key) {
+//     if ((student1, student2) ==='age') {
+//             answer = "student with age key"
+//         } 
+//     };
+
+// console.log(studentAge);
+//if (details.student1
+
+
 
 
