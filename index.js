@@ -1,7 +1,5 @@
 //Create variable and require array, make array dsiplay in terminal
 
-
-const { find } = require('./studentarray_export');
 const exportArray = require('./studentarray_export');
 
 //make sure it's working - had to change default settings in vs code achieve this (typescript.suggestionActions.enabled: false). Otherwise vs code is insisting on ES6. This course is using common.js. 
@@ -36,8 +34,8 @@ console.log(studentParsed[0]);
 student[0].age = 23;
 console.log(student);
 
-//Attempt to isolate key values in one object. 
-//Next, structure to iterate through both objects
+//Attempt to isolate key values in one object -eg make it an array. 
+//Next, structure to iterate through both objects - forEach?
 
 let student1 = Object.keys(student[0]);
 let student2 = Object.keys(student[1]);
@@ -45,9 +43,6 @@ let student2 = Object.keys(student[1]);
 console.log(student1);
 console.log(student2);
 
-//let age = 'age';
-
-student1.forEach((age) => console.log(age));
 
 //Attempt below to achieve same result with one variable - 
 //only results in index numbers.
@@ -59,16 +54,18 @@ student1.forEach((age) => console.log(age));
 // let StudentAll2 = Object.keys(studentAll);
 // console.log(StudentAll2);
 
-// student.forEach(studentAge)
+//Change of strategy. Use filter to isolate age from original student object.
 
-// function studentAge(key) {
-//     if ((student1, student2) ==='age') {
-//             answer = "student with age key"
-//         } 
-//     };
+checkStudent = student.filter(student => student.age >= 0);
+console.log("The student object with an age property is", checkStudent);
 
-// console.log(studentAge);
-//if (details.student1
+//Utilise hasOwnProperty to achieve true for Eep and false for Dawn.
+console.log(student1.hasOwnProperty(2));
+
+console.log(student2.hasOwnProperty(2));
+
+
+
 
 
 
