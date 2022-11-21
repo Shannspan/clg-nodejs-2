@@ -64,6 +64,8 @@ console.log(student1.hasOwnProperty(2));
 
 console.log(student2.hasOwnProperty(2));
 
+//.exit is the command to exit node.js 
+
 
 
 
